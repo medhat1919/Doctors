@@ -39,7 +39,12 @@ const Top = () => {
 </div>
 
 <Link to="/doctors" className='flex justify-center w-full mt-6' >
-    <button className=' bg-blue-500 text-white px-8 py-3.5 rounded-full mt-5 hover:scale-105 transition-transform duration-300 cursor-pointer' onClick={window.scrollTo(0,0)}> View All Doctors </button>
+        <button
+            className=' bg-blue-500 text-white px-8 py-3.5 rounded-full mt-5 hover:scale-105 transition-transform duration-300 cursor-pointer'
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+            View All Doctors
+        </button>
 </Link>
 
 
